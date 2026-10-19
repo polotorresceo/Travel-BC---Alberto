@@ -76,14 +76,9 @@ tailwind.config = { theme: { extend: {
 
 <main id="inicio">
   <section class="mx-auto max-w-7xl px-5 pb-6 pt-8 sm:pt-12">
-    <div class="glass p-2 sm:p-3">
-      <!-- Reemplaza el bloque .ph por tu banner:
-           <img src="https://i.ibb.co/R4h3nRPf/Gemini-Generated-Image-g05ak3g05ak3g05a.jpg" alt="Gemini-Generated-Image-g05ak3g05ak3g05a" border="0" />" alt="Ofertas hasta 55% OFF, 18 MSI y $2,500 MXN en cupones" class="h-full w-full rounded-2xl object-cover"> -->
-      <div class="ph flex aspect-[4/5] w-full flex-col items-center justify-center gap-3 rounded-2xl p-6 text-center sm:aspect-[16/7]">
-        <p class="font-display text-3xl font-bold sm:text-5xl"><span class="gold-text">Hasta 55% OFF</span></p>
-        <p class="text-lg text-white sm:text-xl">18 meses sin intereses · $2,500 MXN en cupones</p>
-        <p class="text-sm text-champagne">Inserta aquí tu Banner Principal (piscina, ofertas y botón de WhatsApp)</p>
-      </div>
+    <div class="glass p-2 sm:p-3 overflow-hidden rounded-2xl">
+      <!-- Banner Superior de Entrada -->
+      <img src="https://i.ibb.co/g05ak3g/Gemini-Generated-Image-g05ak3g05ak3g05a.jpg" alt="Blue Connection - Paquetes hasta 55% OFF" class="h-full w-full rounded-xl object-cover shadow-2xl">
     </div>
     <div class="mt-6 flex justify-center">
       <a href="https://wa.me/522218620111?text=Hola%20Blue%20Connection%2C%20quiero%20aprovechar%20las%20ofertas%20de%20fin%20de%20a%C3%B1o" target="_blank" rel="noopener" class="btn">Quiero mi oferta por WhatsApp</a>
@@ -108,10 +103,9 @@ tailwind.config = { theme: { extend: {
     <h2 class="text-center font-display text-3xl font-bold text-champagne sm:text-5xl">Míralo antes de vivirlo</h2>
     <p class="mx-auto mt-3 max-w-xl text-center text-white">Experiencias reales de nuestros destinos favoritos.</p>
     <div class="mx-auto mt-10 grid max-w-sm gap-6 sm:max-w-none sm:grid-cols-3">
-      <!-- Reemplaza cada .ph por: <iframe class="absolute inset-0 h-full w-full" src="https://www.youtube.com/embed/ID_DEL_VIDEO" title="Video Blue Connection" allow="accelerometer; autoplay; encrypted-media; picture-in-picture" allowfullscreen loading="lazy"></iframe> -->
-      <div class="glass glass-hover p-2"><div class="relative aspect-[9/16] w-full overflow-hidden rounded-2xl"><div class="ph absolute inset-0 flex items-center justify-center text-center text-sm">Video 1 · 9:16</div></div></div>
-      <div class="glass glass-hover p-2"><div class="relative aspect-[9/16] w-full overflow-hidden rounded-2xl"><div class="ph absolute inset-0 flex items-center justify-center text-center text-sm">Video 2 · 9:16</div></div></div>
-      <div class="glass glass-hover p-2"><div class="relative aspect-[9/16] w-full overflow-hidden rounded-2xl"><div class="ph absolute inset-0 flex items-center justify-center text-center text-sm">Video 3 · 9:16</div></div></div>
+      <div class="glass glass-hover p-2"><div class="relative aspect-[9/16] w-full overflow-hidden rounded-2xl"><div class="ph absolute inset-0 flex items-center justify-center text-center text-sm">Video 1 · 9:16<br>(Inserta aquí tu iframe de YouTube)</div></div></div>
+      <div class="glass glass-hover p-2"><div class="relative aspect-[9/16] w-full overflow-hidden rounded-2xl"><div class="ph absolute inset-0 flex items-center justify-center text-center text-sm">Video 2 · 9:16<br>(Inserta aquí tu iframe de YouTube)</div></div></div>
+      <div class="glass glass-hover p-2"><div class="relative aspect-[9/16] w-full overflow-hidden rounded-2xl"><div class="ph absolute inset-0 flex items-center justify-center text-center text-sm">Video 3 · 9:16<br>(Inserta aquí tu iframe de YouTube)</div></div></div>
     </div>
   </section>
 
@@ -120,7 +114,6 @@ tailwind.config = { theme: { extend: {
     <h2 class="text-center font-display text-3xl font-bold sm:text-5xl"><span class="gold-text">Viajes imperdibles de fin de año</span></h2>
     <p class="mx-auto mt-3 max-w-xl text-center text-white">Cupo limitado en las fechas más buscadas. Asegura tu lugar hoy.</p>
     <div class="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-      <!-- Reemplaza cada .ph por: <img src="https://i.ibb.co/r2qCxHZf/AV-IXTAPA.jpg" alt="AV-IXTAPA" border="0" />" alt="..." class="h-full w-full object-cover" loading="lazy"> -->
       <article class="glass glass-hover flex flex-col p-3">
         <div class="aspect-[4/3] w-full overflow-hidden rounded-xl"><div class="ph flex h-full w-full items-center justify-center text-sm">Imagen 4:3 · Caribe</div></div>
         <div class="flex flex-1 flex-col p-4">
@@ -152,7 +145,6 @@ tailwind.config = { theme: { extend: {
   <section id="testimonios" class="mx-auto max-w-7xl px-5 py-16 sm:py-24">
     <h2 class="text-center font-display text-3xl font-bold text-champagne sm:text-5xl">Viajeros que ya lo vivieron</h2>
     <p class="mx-auto mt-3 max-w-xl text-center text-white">Historias de clientes que confiaron en Blue Connection.</p>
-    <!-- Sustituye estos textos de ejemplo por testimonios reales (con permiso del cliente) -->
     <div class="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
       <figure class="glass glass-hover p-6"><p class="text-xl tracking-widest text-gold" aria-label="5 estrellas">★★★★★</p><blockquote class="mt-3 text-white">“Todo salió perfecto. Nos resolvieron cada duda por WhatsApp y el resort superó lo que esperábamos.”</blockquote><figcaption class="mt-4"><span class="font-semibold text-champagne">María Fernanda R.</span><span class="block text-sm text-white">Cancún, todo incluido</span></figcaption></figure>
       <figure class="glass glass-hover p-6"><p class="text-xl tracking-widest text-gold" aria-label="5 estrellas">★★★★★</p><blockquote class="mt-3 text-white">“Los 18 meses sin intereses nos permitieron llevar a toda la familia. Atención de primera.”</blockquote><figcaption class="mt-4"><span class="font-semibold text-champagne">Carlos y Elena M.</span><span class="block text-sm text-white">Riviera Maya</span></figcaption></figure>
@@ -165,14 +157,9 @@ tailwind.config = { theme: { extend: {
 
   <!-- ============ SEGMENTO 6: BANNER BOTTOM ============ -->
   <section class="mx-auto max-w-6xl px-5 py-10">
-    <div class="glass p-2 sm:p-3">
-      <!-- Reemplaza el bloque .ph por:
-           <img src="https://i.ibb.co/sJ5KS8Qn/Gemini-Generated-Image-g05ak3g05ak3g05a.jpg" alt="Gemini-Generated-Image-bmydc9bmydc9bmyd" border="0" />" alt="Gracias por seguir confiando en nosotros. Oficina Puebla. WhatsApp 52 221 862 0111" class="w-full rounded-2xl" loading="lazy"> -->
-      <div class="ph flex min-h-[200px] flex-col items-center justify-center gap-2 rounded-2xl p-6 text-center">
-        <p class="font-display text-2xl font-bold text-gold sm:text-3xl">Gracias por seguir confiando en nosotros</p>
-        <p class="text-white">Oficina Puebla · WhatsApp +52 221 862 0111</p>
-        <p class="text-sm text-champagne">Inserta aquí tu Banner del Footer</p>
-      </div>
+    <div class="glass p-2 sm:p-3 overflow-hidden rounded-2xl">
+      <!-- Banner Inferior (Footer) -->
+      <img src="https://i.ibb.co/bmydc9b/Gemini-Generated-Image-bmydc9bmydc9bmyd.jpg" alt="Blue Connection - Gracias por confiar en nosotros" class="w-full rounded-xl object-cover shadow-2xl">
     </div>
   </section>
 
