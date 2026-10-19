@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Blue Connection | Viajes de lujo para fin de año</title>
+<meta name="description" content="Ofertas de hasta 55% OFF, 18 meses sin intereses y $2,500 MXN en cupones. Viaja con elegancia y seguridad con Blue Connection.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com/3.4.17"></script>
+<script>
+tailwind.config = { theme: { extend: {
+  fontFamily: { display: ['"Cormorant Garamond"', 'Georgia', 'serif'], sans: ['Manrope', 'system-ui', 'sans-serif'] },
+  colors: { gold: '#D4AF37', champagne: '#F3E5AB', deep: '#020b2d', navy: '#0a192f' }
+}}}
+</script>
+<style>
+  html { scroll-behavior: smooth; }
+  body {
+    color: #FFFFFF;
+    background:
+      radial-gradient(900px 500px at 85% -5%, rgba(30,80,255,.35), transparent 60%),
+      radial-gradient(700px 500px at 0% 35%, rgba(212,175,55,.10), transparent 60%),
+      radial-gradient(900px 600px at 100% 75%, rgba(30,80,255,.28), transparent 60%),
+      linear-gradient(180deg, #020b2d 0%, #0a192f 50%, #020b2d 100%);
+    background-attachment: fixed;
+  }
+  .gold-text { background: linear-gradient(100deg, #D4AF37 0%, #F3E5AB 45%, #D4AF37 100%); -webkit-background-clip: text; background-clip: text; color: transparent; }
+  .glass {
+    position: relative; overflow: hidden;
+    background: linear-gradient(145deg, rgba(255,255,255,.12), rgba(255,255,255,.03));
+    border: 1px solid rgba(243,229,171,.28);
+    backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px);
+    box-shadow: 0 10px 40px rgba(0,5,40,.55), inset 0 1px 0 rgba(255,255,255,.25);
+    border-radius: 1.25rem;
+  }
+  .glass::before { content:""; position:absolute; top:0; left:-60%; width:50%; height:100%;
+    background: linear-gradient(100deg, transparent, rgba(255,255,255,.12), transparent); transform: skewX(-18deg); pointer-events:none; }
+  .glass-hover { transition: transform .35s ease, border-color .35s ease, box-shadow .35s ease; }
+  .glass-hover:hover { transform: translateY(-6px); border-color: rgba(212,175,55,.8); box-shadow: 0 16px 50px rgba(0,5,40,.7), 0 0 32px rgba(212,175,55,.25), inset 0 1px 0 rgba(255,255,255,.3); }
+  .btn {
+    display: inline-flex; align-items: center; justify-content: center; gap: .5rem;
+    color: #FFFFFF; font-weight: 600; letter-spacing: .02em; text-align: center;
+    padding: .8rem 1.6rem; border-radius: 999px;
+    background: linear-gradient(145deg, rgba(212,175,55,.28), rgba(255,255,255,.06));
+    border: 1px solid #D4AF37; backdrop-filter: blur(10px);
+    box-shadow: 0 0 14px rgba(212,175,55,.3), inset 0 1px 0 rgba(255,255,255,.35);
+    transition: transform .3s ease, box-shadow .3s ease, color .3s ease, background .3s ease;
+  }
+  .btn:hover { transform: translateY(-2px); color: #F3E5AB; background: linear-gradient(145deg, rgba(212,175,55,.45), rgba(255,255,255,.1)); box-shadow: 0 0 30px rgba(212,175,55,.65), 0 0 60px rgba(212,175,55,.25), inset 0 1px 0 rgba(255,255,255,.45); }
+  .btn:focus-visible, a:focus-visible { outline: 2px solid #F3E5AB; outline-offset: 3px; }
+  .ph { background: repeating-linear-gradient(135deg, rgba(212,175,55,.07) 0 14px, rgba(255,255,255,.02) 14px 28px); color: #F3E5AB; }
+  .cta-pulse { animation: glow 3.2s ease-in-out infinite; }
+  @keyframes glow { 0%,100% { box-shadow: 0 0 22px rgba(212,175,55,.35), inset 0 1px 0 rgba(255,255,255,.35); } 50% { box-shadow: 0 0 55px rgba(212,175,55,.8), 0 0 90px rgba(212,175,55,.3), inset 0 1px 0 rgba(255,255,255,.45); } }
+  @media (prefers-reduced-motion: reduce) { .cta-pulse { animation: none; } html { scroll-behavior: auto; } .glass-hover, .btn { transition: none; } }
+</style>
+</head>
+<body class="font-sans antialiased text-white">
+
+<!-- ============ SEGMENTO 1: HEADER + BANNER PRINCIPAL ============ -->
+<header class="sticky top-0 z-50 border-b border-gold/30 bg-deep/70 backdrop-blur-xl">
+  <nav class="mx-auto flex max-w-7xl items-center justify-between px-5 py-3" aria-label="Principal">
+    <a href="#inicio" class="font-display text-2xl font-bold leading-none sm:text-3xl">
+      <span class="text-white">Blue</span> <span class="gold-text">Connection</span>
+    </a>
+    <ul class="hidden items-center gap-7 text-sm text-white md:flex">
+      <li><a class="transition hover:text-champagne" href="#autoridad">Nosotros</a></li>
+      <li><a class="transition hover:text-champagne" href="#videos">Videos</a></li>
+      <li><a class="transition hover:text-champagne" href="#destinos">Destinos</a></li>
+      <li><a class="transition hover:text-champagne" href="#testimonios">Testimonios</a></li>
+    </ul>
+    <a href="https://wa.me/522218620111?text=Hola%20Blue%20Connection%2C%20quiero%20asesor%C3%ADa%20para%20mi%20viaje%20de%20fin%20de%20a%C3%B1o" target="_blank" rel="noopener" class="btn !px-4 !py-2 text-sm">WhatsApp</a>
+  </nav>
+</header>
+
+<main id="inicio">
+  <section class="mx-auto max-w-7xl px-5 pb-6 pt-8 sm:pt-12">
+    <div class="glass p-2 sm:p-3">
+      <!-- Reemplaza el bloque .ph por tu banner:
+           <img src="banner-principal.jpg" alt="Ofertas hasta 55% OFF, 18 MSI y $2,500 MXN en cupones" class="h-full w-full rounded-2xl object-cover"> -->
+      <div class="ph flex aspect-[4/5] w-full flex-col items-center justify-center gap-3 rounded-2xl p-6 text-center sm:aspect-[16/7]">
+        <p class="font-display text-3xl font-bold sm:text-5xl"><span class="gold-text">Hasta 55% OFF</span></p>
+        <p class="text-lg text-white sm:text-xl">18 meses sin intereses · $2,500 MXN en cupones</p>
+        <p class="text-sm text-champagne">Inserta aquí tu Banner Principal (piscina, ofertas y botón de WhatsApp)</p>
+      </div>
+    </div>
+    <div class="mt-6 flex justify-center">
+      <a href="https://wa.me/522218620111?text=Hola%20Blue%20Connection%2C%20quiero%20aprovechar%20las%20ofertas%20de%20fin%20de%20a%C3%B1o" target="_blank" rel="noopener" class="btn">Quiero mi oferta por WhatsApp</a>
+    </div>
+  </section>
+
+  <!-- ============ SEGMENTO 2: PROPUESTA DE VALOR ============ -->
+  <section id="autoridad" class="mx-auto max-w-4xl px-5 py-16 text-center sm:py-24">
+    <h1 class="font-display text-4xl font-bold leading-tight sm:text-6xl"><span class="gold-text">El arte de viajar con elegancia y seguridad</span></h1>
+    <p class="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-white sm:text-xl">
+      Este fin de año merece algo más que unas vacaciones: merece recuerdos que duren toda la vida. En Blue Connection diseñamos cada viaje contigo, con asesoría personalizada, precios preferenciales, pagos hasta en 18 meses sin intereses y acompañamiento real antes, durante y después de tu viaje.
+    </p>
+    <ul class="mt-10 grid gap-4 text-left sm:grid-cols-3">
+      <li class="glass p-5"><p class="font-display text-xl font-semibold text-champagne">Ofertas exclusivas</p><p class="mt-1 text-white">Hasta 55% de descuento y $2,500 MXN en cupones.</p></li>
+      <li class="glass p-5"><p class="font-display text-xl font-semibold text-champagne">Pagos flexibles</p><p class="mt-1 text-white">Hasta 18 meses sin intereses para que viajes sin presión.</p></li>
+      <li class="glass p-5"><p class="font-display text-xl font-semibold text-champagne">Atención directa</p><p class="mt-1 text-white">Un asesor por WhatsApp y oficina física en Puebla.</p></li>
+    </ul>
+  </section>
+
+  <!-- ============ SEGMENTO 3: VIDEOS 9:16 ============ -->
+  <section id="videos" class="mx-auto max-w-6xl px-5 py-12 sm:py-16">
+    <h2 class="text-center font-display text-3xl font-bold text-champagne sm:text-5xl">Míralo antes de vivirlo</h2>
+    <p class="mx-auto mt-3 max-w-xl text-center text-white">Experiencias reales de nuestros destinos favoritos.</p>
+    <div class="mx-auto mt-10 grid max-w-sm gap-6 sm:max-w-none sm:grid-cols-3">
+      <!-- Reemplaza cada .ph por: <iframe class="absolute inset-0 h-full w-full" src="https://www.youtube.com/embed/ID_DEL_VIDEO" title="Video Blue Connection" allow="accelerometer; autoplay; encrypted-media; picture-in-picture" allowfullscreen loading="lazy"></iframe> -->
+      <div class="glass glass-hover p-2"><div class="relative aspect-[9/16] w-full overflow-hidden rounded-2xl"><div class="ph absolute inset-0 flex items-center justify-center text-center text-sm">Video 1 · 9:16</div></div></div>
+      <div class="glass glass-hover p-2"><div class="relative aspect-[9/16] w-full overflow-hidden rounded-2xl"><div class="ph absolute inset-0 flex items-center justify-center text-center text-sm">Video 2 · 9:16</div></div></div>
+      <div class="glass glass-hover p-2"><div class="relative aspect-[9/16] w-full overflow-hidden rounded-2xl"><div class="ph absolute inset-0 flex items-center justify-center text-center text-sm">Video 3 · 9:16</div></div></div>
+    </div>
+  </section>
+
+  <!-- ============ SEGMENTO 4: GALERÍA DE DESTINOS 4:3 ============ -->
+  <section id="destinos" class="mx-auto max-w-7xl px-5 py-16 sm:py-24">
+    <h2 class="text-center font-display text-3xl font-bold sm:text-5xl"><span class="gold-text">Viajes imperdibles de fin de año</span></h2>
+    <p class="mx-auto mt-3 max-w-xl text-center text-white">Cupo limitado en las fechas más buscadas. Asegura tu lugar hoy.</p>
+    <div class="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+      <!-- Reemplaza cada .ph por: <img src="destino.jpg" alt="..." class="h-full w-full object-cover" loading="lazy"> -->
+      <article class="glass glass-hover flex flex-col p-3">
+        <div class="aspect-[4/3] w-full overflow-hidden rounded-xl"><div class="ph flex h-full w-full items-center justify-center text-sm">Imagen 4:3 · Caribe</div></div>
+        <div class="flex flex-1 flex-col p-4">
+          <h3 class="font-display text-2xl font-bold text-gold">Playas del Caribe y resorts de lujo</h3>
+          <p class="mt-2 flex-1 text-white">Todo incluido frente al mar turquesa. Cancún, Riviera Maya y más, con tus vacaciones resueltas de principio a fin.</p>
+          <a href="https://wa.me/522218620111?text=Hola%2C%20quiero%20ver%20el%20paquete%20de%20Playas%20del%20Caribe" target="_blank" rel="noopener" class="btn mt-5">Ver paquete</a>
+        </div>
+      </article>
+      <article class="glass glass-hover flex flex-col p-3">
+        <div class="aspect-[4/3] w-full overflow-hidden rounded-xl"><div class="ph flex h-full w-full items-center justify-center text-sm">Imagen 4:3 · Navidad y nieve</div></div>
+        <div class="flex flex-1 flex-col p-4">
+          <h3 class="font-display text-2xl font-bold text-gold">Navidades mágicas y nieve</h3>
+          <p class="mt-2 flex-1 text-white">Mercados navideños, luces y paisajes nevados para celebrar en familia o en pareja, como en una película.</p>
+          <a href="https://wa.me/522218620111?text=Hola%2C%20quiero%20ver%20el%20paquete%20de%20Navidades%20M%C3%A1gicas%20y%20Nieve" target="_blank" rel="noopener" class="btn mt-5">Ver paquete</a>
+        </div>
+      </article>
+      <article class="glass glass-hover flex flex-col p-3 md:col-span-2 md:mx-auto md:w-[calc(50%-1rem)] lg:col-span-1 lg:mx-0 lg:w-auto">
+        <div class="aspect-[4/3] w-full overflow-hidden rounded-xl"><div class="ph flex h-full w-full items-center justify-center text-sm">Imagen 4:3 · Cultural</div></div>
+        <div class="flex flex-1 flex-col p-4">
+          <h3 class="font-display text-2xl font-bold text-gold">Escapadas culturales e internacionales</h3>
+          <p class="mt-2 flex-1 text-white">Recibe el año nuevo en ciudades icónicas: arte, gastronomía e historia con itinerarios que sí puedes disfrutar.</p>
+          <a href="https://wa.me/522218620111?text=Hola%2C%20quiero%20ver%20el%20paquete%20de%20Escapadas%20Culturales%20e%20Internacionales" target="_blank" rel="noopener" class="btn mt-5">Ver paquete</a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ============ SEGMENTO 5: TESTIMONIOS ============ -->
+  <section id="testimonios" class="mx-auto max-w-7xl px-5 py-16 sm:py-24">
+    <h2 class="text-center font-display text-3xl font-bold text-champagne sm:text-5xl">Viajeros que ya lo vivieron</h2>
+    <p class="mx-auto mt-3 max-w-xl text-center text-white">Historias de clientes que confiaron en Blue Connection.</p>
+    <!-- Sustituye estos textos de ejemplo por testimonios reales (con permiso del cliente) -->
+    <div class="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+      <figure class="glass glass-hover p-6"><p class="text-xl tracking-widest text-gold" aria-label="5 estrellas">★★★★★</p><blockquote class="mt-3 text-white">“Todo salió perfecto. Nos resolvieron cada duda por WhatsApp y el resort superó lo que esperábamos.”</blockquote><figcaption class="mt-4"><span class="font-semibold text-champagne">María Fernanda R.</span><span class="block text-sm text-white">Cancún, todo incluido</span></figcaption></figure>
+      <figure class="glass glass-hover p-6"><p class="text-xl tracking-widest text-gold" aria-label="5 estrellas">★★★★★</p><blockquote class="mt-3 text-white">“Los 18 meses sin intereses nos permitieron llevar a toda la familia. Atención de primera.”</blockquote><figcaption class="mt-4"><span class="font-semibold text-champagne">Carlos y Elena M.</span><span class="block text-sm text-white">Riviera Maya</span></figcaption></figure>
+      <figure class="glass glass-hover p-6"><p class="text-xl tracking-widest text-gold" aria-label="5 estrellas">★★★★★</p><blockquote class="mt-3 text-white">“Nuestra primera Navidad con nieve fue un sueño. Todo estuvo organizado al detalle.”</blockquote><figcaption class="mt-4"><span class="font-semibold text-champagne">Alejandra T.</span><span class="block text-sm text-white">Navidad en Nueva York</span></figcaption></figure>
+      <figure class="glass glass-hover p-6"><p class="text-xl tracking-widest text-gold" aria-label="5 estrellas">★★★★★</p><blockquote class="mt-3 text-white">“Viajé con mis papás y nos sentimos acompañados en todo momento. Repetiremos seguro.”</blockquote><figcaption class="mt-4"><span class="font-semibold text-champagne">Diego S.</span><span class="block text-sm text-white">Madrid y Barcelona</span></figcaption></figure>
+      <figure class="glass glass-hover p-6"><p class="text-xl tracking-widest text-gold" aria-label="5 estrellas">★★★★★</p><blockquote class="mt-3 text-white">“Encontraron una oferta mejor que la que yo había visto en línea. Cero estrés y cero sorpresas.”</blockquote><figcaption class="mt-4"><span class="font-semibold text-champagne">Paola G.</span><span class="block text-sm text-white">Punta Cana</span></figcaption></figure>
+      <figure class="glass glass-hover p-6"><p class="text-xl tracking-widest text-gold" aria-label="5 estrellas">★★★★★</p><blockquote class="mt-3 text-white">“Pasar el año nuevo en Europa con todo coordinado fue la mejor decisión. Totalmente recomendados.”</blockquote><figcaption class="mt-4"><span class="font-semibold text-champagne">Ricardo y Sofía L.</span><span class="block text-sm text-white">París y Roma</span></figcaption></figure>
+    </div>
+  </section>
+
+  <!-- ============ SEGMENTO 6: BANNER BOTTOM ============ -->
+  <section class="mx-auto max-w-6xl px-5 py-10">
+    <div class="glass p-2 sm:p-3">
+      <!-- Reemplaza el bloque .ph por:
+           <img src="banner-footer.jpg" alt="Gracias por seguir confiando en nosotros. Oficina Puebla. WhatsApp 52 221 862 0111" class="w-full rounded-2xl" loading="lazy"> -->
+      <div class="ph flex min-h-[200px] flex-col items-center justify-center gap-2 rounded-2xl p-6 text-center">
+        <p class="font-display text-2xl font-bold text-gold sm:text-3xl">Gracias por seguir confiando en nosotros</p>
+        <p class="text-white">Oficina Puebla · WhatsApp +52 221 862 0111</p>
+        <p class="text-sm text-champagne">Inserta aquí tu Banner del Footer</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SEGMENTO 7: CTA MAGNÉTICO ============ -->
+  <section class="mx-auto max-w-4xl px-5 py-20 text-center sm:py-28">
+    <h2 class="font-display text-4xl font-bold leading-tight sm:text-6xl"><span class="gold-text">Tu próximo recuerdo inolvidable empieza hoy</span></h2>
+    <p class="mx-auto mt-5 max-w-xl text-lg text-white">Habla con un asesor y recibe una propuesta personalizada. Las mejores tarifas de fin de año se agotan rápido.</p>
+    <a href="https://wa.me/522218620111?text=Hola%20Blue%20Connection%2C%20quiero%20reservar%20mi%20viaje%20o%20solicitar%20informaci%C3%B3n%20con%20un%20asesor"
+       target="_blank" rel="noopener"
+       class="btn cta-pulse mt-10 w-full !rounded-3xl !px-6 !py-6 font-display text-2xl !font-bold sm:w-auto sm:!px-14 sm:text-3xl">
+      ¡Reserva tu viaje o solicita información ahora!
+    </a>
+    <p class="mt-5 text-sm text-champagne">Respuesta directa por WhatsApp · Oficina en Puebla</p>
+  </section>
+</main>
+
+<footer class="border-t border-gold/30 px-5 py-8 text-center text-sm text-white">
+  <p class="font-display text-xl"><span class="text-white">Blue</span> <span class="gold-text">Connection</span></p>
+  <p class="mt-2">© <span id="y"></span> Blue Connection. Todos los derechos reservados.</p>
+</footer>
+
+<script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
